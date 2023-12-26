@@ -1,0 +1,81 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import TimeLineElement from "../../components/cv/TimeLine.astro";
+import i18next, { t, changeLanguage } from "i18next";
+import { Trans, HeadHrefLangs } from "astro-i18next/components";
+
+changeLanguage("es");
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">{t("cv.profile.title")}</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    {t("cv.profile.description")}
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">{t("cv.education.title")}</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title={t("cv.education.one.title")}
+      subtitle={t("cv.education.one.description")}
+    />
+    <TimeLineElement
+      title={t("cv.education.two.title")}
+      subtitle={t("cv.education.two.description")}
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">{t("cv.jobs.title")}</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title={t("cv.jobs.one.title")}
+      subtitle={t("cv.jobs.one.subtitle")}
+    >
+    {t("cv.jobs.one.description")}
+    </TimeLineElement>
+
+    <TimeLineElement
+      title={t("cv.jobs.two.title")}
+      subtitle={t("cv.jobs.two.subtitle")}
+    >
+    {t("cv.jobs.two.description")}
+    </TimeLineElement>
+
+    <TimeLineElement
+      title={t("cv.jobs.three.title")}
+      subtitle={t("cv.jobs.three.subtitle")}
+    >
+    {t("cv.jobs.three.description")}
+    </TimeLineElement>
+  </div>
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">{t("cv.skills.title")}</div>
+  </div>
+
+  <div class="flex justify-around">
+    <ul class="list-disc md:columns-1 ">
+      <li>{t("cv.skills.skill_1")}</li>
+      <li>{t("cv.skills.skill_2")}</li>
+      <li>{t("cv.skills.skill_3")}</li>
+      <li>{t("cv.skills.skill_4")}</li>
+      <li>{t("cv.skills.skill_5")}</li>
+    </ul>
+    <ul class="list-disc md:columns-1 ">
+      <li>{t("cv.skills.skill_6")}</li>
+      <li>{t("cv.skills.skill_7")}</li>
+      <li>{t("cv.skills.skill_8")}</li>
+      <li>{t("cv.skills.skill_9")}</li>
+      <li>{t("cv.skills.skill_10")}</li>
+    </ul>
+  </div>
+  
+</BaseLayout>

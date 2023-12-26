@@ -1,0 +1,56 @@
+{
+  "index": {
+    "title": "Yo soy David Conde"
+  },
+  "cv": {
+    "profile": {
+      "title": "Perfil",
+      "description": "Con experiencia en ingeniería de software, he participado en el desarrollo de microservicios en Java, aplicando una arquitectura hexagonal para mejorar la modularidad y reducir las dependencias. Mi compromiso con prácticas de Clean Code y principios SOLID busca garantizar la claridad del código, respaldado por mi familiaridad con Java 17. En el ámbito bancario, contribuí modestamente a mejorar la eficiencia de sistemas heredados. También he trabajado con Python en el marco de Odoo, enfocándome en el desarrollo de módulos personalizados y la utilización de la API. Mi experiencia incluye aplicaciones de gestión escolar en Java 8, microservicios con Spring Boot y JPA, la creación de APIs en Node.js, y el trabajo con bases de datos como PostgreSQL y SQL Server. En DevOps, he participado en la configuración de entornos locales y he adquirido habilidades en Docker. Mi enfoque es seguir aprendiendo y contribuir con soluciones prácticas en diversos entornos tecnológicos."
+    },
+    "education": {
+      "title": "Educación",
+      "one": {
+        "title": "Máster Universitario en Dirección de Proyectos Informáticos",
+        "description": "Septiembre/2022 - actualidad en la Universidad de Alcalá, Madrid, Spain"
+      },
+      "two": { 
+        "title": "Grado en Ingenieria de Software",
+        "description": "Septiembre/2016 - Febrero/2022 en la Universidad Complutense de Madrid, Madrid, Spain"
+      }
+    },
+    "jobs": {
+      "title": "Experiencia",
+      "one": {
+        "title": "Ingenierio de Software",
+        "subtitle": "Julio/2022 - actualidad en ING, Madrid, Spain",
+        "description": "He participado activamente en el desarrollo de microservicios en Java, implementando una arquitectura hexagonal que favorece la modularidad y minimiza las interdependencias entre los componentes. He cultivado un compromiso firme con las prácticas de Clean Code y he aplicado los principios SOLID para asegurar la legibilidad y mantenibilidad del código. Mi experiencia abarca el uso de Java 17, manteniéndome actualizado con las últimas tecnologías para asegurar el rendimiento óptimo de las soluciones. Además, he desempeñado un papel esencial en la mejora de la parte legacy del banco, introduciendo modificaciones que han fortalecido la eficiencia y la funcionalidad de los sistemas existentes. Mi enfoque proactivo y mi capacidad para abordar tanto tecnologías emergentes como áreas heredadas me han permitido ofrecer soluciones integrales y de alto rendimiento en el ámbito de la ingeniería de software."
+      },
+      "two": {
+        "title": "Programador Fullstack",
+        "subtitle": "Diciembre/2021 - Julio/2023 en Dominion Global, Madrid, Spain",
+        "description": "En esta experiencia profesional, he liderado la implementación de una aplicación React vinculada a Power BI, aportando habilidades clave en el desarrollo frontend. Asimismo, he destacado en el ámbito de Java, donde he diseñado y desarrollado Microservicios utilizando las versiones 16 y 17, empleando Spring Boot, JPA y una arquitectura Hexagonal para lograr un desacoplamiento efectivo. En el ámbito de AWS, he contribuido al desarrollo de funciones Lambda en Python y Java, ejecutado trabajos mediante Glue y Pyspark, y creado flujos de trabajo en Airflow con enfoque en Python. Además, he participado activamente en despliegues de contenedores utilizando ECS y ECR, así como en la gestión de diversos servicios dentro de la plataforma. Además, mi experiencia abarca el mantenimiento de aplicaciones legacy y la dockerización de aplicaciones para garantizar una implementación eficiente y escalable."
+      },
+      "three": {
+        "title":"Programador Fullstack",
+        "subtitle": "Noviembre/2017 - Diciembre/2021 en EduwebGroup S.L., Madrid, Spain",
+        "description": "A lo largo de esta experiencia carrera, me he destacado en diversas tecnologías. En Python, específicamente dentro del marco de Odoo, he liderado el desarrollo de módulos personalizados, incluyendo importadores de datos, sincronizadores con otros sistemas y extensiones de módulos propietarios. También he contribuido a proyectos que utilizan la API de servicios web de Odoo para un backend robusto. En Java, he implementado aplicaciones de gestión escolar utilizando Java 8 con SPRING MVC y me he adentrado en el desarrollo de microservicios con Spring Boot y JPA. En Node.js, me he especializado en la creación de APIs para proyectos que requieren una capa sólida de servicios. Mi experiencia se extiende a trabajos con bases de datos, abarcando la creación de procedimientos PLSQL y la reestructuración de bases de datos en PostgreSQL y SQL Server. En DevOps, he configurado entornos locales, manejando la instalación de bases de datos, Nginx, FTPS y scripts de shell. Además, he demostrado competencia en Docker, orquestando infraestructuras y dockerizando diversas aplicaciones."
+      }
+    },
+    "skills":{
+      "title": "Habilidades",
+      "skill_1": "Microservicios Java",
+      "skill_2": "Arquitectura hexagonal",
+      "skill_3": "Código limpio",
+      "skill_4": "Principios SOLID",
+      "skill_5": "Odoo framework (Python)",
+      "skill_6": "Java 8 con SPRING MVC",
+      "skill_7": "Desarrollo de APIS en Node.js",
+      "skill_8": "PostgreSQL y SQL Server",
+      "skill_9": "React y Angular ",
+      "skill_10": "Docker y orquestación de infraestructura"
+    }
+  },
+  "footer":{
+    "modified_by": " modificado por "
+  }
+}
