@@ -7,7 +7,7 @@ import { getCollection } from "astro:content";
 changeLanguage("es");
 
 export async function getStaticPaths({ paginate }) {
-    const all_posts = await getCollection("blog");
+    const all_posts = await getCollection("blog_es");
     const all_tags = all_posts.flatMap((post) => {
         return post.data.tags || [];
     });

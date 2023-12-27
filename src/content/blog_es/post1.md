@@ -1,6 +1,6 @@
 ---
-title: "How to Use TypeScript with React"
-description: "In this article, you will learn how to use TypeScript with React."
+title: "Como usar Typescript con React"
+description: "En este articulo, tu aprenderás como usar Typescript con React."
 pubDate: "November 15, 2023"
 heroImage: "/tech_imgs/react.svg"
 badge: "React"
