@@ -1,6 +1,27 @@
 {
+  "sidebar":{
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "services": "Servicios",
+    "blog": "Blog",
+    "cv": "CV",
+    "contact": "Contacto",
+    "last_projects": {
+      "title": "Mis últimos proyectos",
+      "items": {
+        "one": {
+          "title": "Página Web de Portfolio",
+          "desc": "Este repositorio alberga mi portafolio web, construido con Astro. Este proyecto es el escaparate digital de mi experiencia y habilidades en el mundo del desarrollo de software."
+        },
+        "two":{},
+        "three":{}
+      }
+    }
+  },
   "index": {
-    "title": "Yo soy David Conde"
+    "greetings": "Bienvenido a mi espacio de desarrollo! 🚀",
+    "title": "Yo soy David Conde Cubas",
+    "description": "Soy un ingeniero de software con un compromiso constante de aprender y mejorar. Mi enfoque abarca tanto el desarrollo backend como el frontend. En el backend, utilizo tecnologías como Java y Python para construir sistemas robustos. En el frontend, me sumerjo en el diseño de interfaces atractivas utilizando tecnologías modernas como React.<0>Este espacio digital es un reflejo de mi pasión por la ingeniería de software y mi deseo constante de crecimiento. A través de mis proyectos, podrás explorar mi enfoque en la resolución de problemas y mi dedicación a crear soluciones tecnológicas efectivas.<1><2>Si tienes preguntas, propuestas o simplemente deseas conectarte, estoy aquí. ¡Gracias por visitar mi portafolio!</2>"
   },
   "cv": {
     "profile": {

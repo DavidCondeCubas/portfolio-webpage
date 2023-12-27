@@ -1,6 +1,27 @@
 {
+  "sidebar":{
+    "home": "Home",
+    "projects": "Projects",
+    "services": "Services",
+    "blog": "Blog",
+    "cv": "CV",
+    "contact": "Contact",
+    "last_projects": {
+      "title": "My last projects",
+      "items": {
+        "one": {
+          "title": "Portfolio Webpage",
+          "desc": "This repository houses my web portfolio, built with Astro. This project serves as the digital showcase of my experience and skills in the field of software development."
+        },
+        "two":{},
+        "three":{}
+      }
+    }
+  },
   "index": {
-    "title": "I'm David Conde"
+    "greetings": "Welcome to my development space! 🚀",
+    "title": "I'm David Conde",
+    "description": "I'm a software engineer committed to constant learning and improvement. My focus spans both backend and frontend development. In the backend, I leverage technologies like Java and Python to build robust systems. On the frontend, I immerse myself in designing appealing interfaces using modern technologies such as React<0>This digital space reflects my passion for software engineering and my constant desire for growth. Through my projects, you can explore my problem-solving approach and dedication to creating effective technological solutions.<1><2>If you have questions, proposals, or just want to connect, I'm here. Thank you for visiting my portfolio!</2>"
   },
   "cv": {
     "profile": {
