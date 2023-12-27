@@ -1,20 +1,23 @@
 ---
+import i18next, { t, changeLanguage } from "i18next";
+import { localizePath } from "astro-i18next";
+
 const { sideBarActiveItemID } = Astro.props;
 const activeClass = "bg-base-300"; // For primary color replace with `active` class
----
 
+---
 <ul class="menu grow shrink menu-md overflow-y-auto">
-    <li><a class="py-3 text-base" id="home" href="/">Home</a></li>
-    <li><a class="py-3 text-base" id="project" href="/project">Projects</a></li>
-    <li><a class="py-3 text-base" id="services" href="/services">Services</a></li>
-    <li><a class="py-3 text-base" id="blog" href="/blog/">Blog</a></li>
-    <li><a class="py-3 text-base" id="cv" href="/cv">CV</a></li>
+    <li><a class="py-3 text-base" id="home" href={localizePath("/")}>{t("sidebar.home")}</a></li>
+    <li><a class="py-3 text-base" id="project" href={localizePath("/project")}>{t("sidebar.projects")}</a></li>
+    <li><a class="py-3 text-base" id="services" href={localizePath("/services")}>{t("sidebar.services")}</a></li>
+    <li><a class="py-3 text-base" id="blog" href={localizePath("/blog")}>{t("sidebar.blog")}</a></li>
+    <li><a class="py-3 text-base" id="cv" href={localizePath("/cv")}>{t("sidebar.cv")}</a></li>
     <li>
         <a
             class="py-3 text-base"
             href="mailto:davidcondecubas@gmail.com"
             target="_blank"
-            referrerpolicy="no-referrer-when-downgrade">Contact</a
+            referrerpolicy="no-referrer-when-downgrade">{t("sidebar.contact")}</a
         >
     </li>
 </ul>
