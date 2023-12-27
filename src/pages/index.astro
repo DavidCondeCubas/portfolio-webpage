@@ -4,83 +4,131 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
 import i18next, { t, changeLanguage } from "i18next";
 import { Trans, HeadHrefLangs } from "astro-i18next/components";
-
-changeLanguage("en");
-
+import { Image } from "astro:assets";
 const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 const last_posts = posts.slice(0, 3);
+import java from "../../public/tech_imgs/java.svg";
+import springboot from "../../public/tech_imgs/spring-boot.svg";
+import astro from "../../public/tech_imgs/astro.svg";
+import odoo from "../../public/tech_imgs/odoo.png";
+import python from "../../public/tech_imgs/python.svg";
+import aws from "../../public/tech_imgs/aws.svg";
+import react from "../../public/tech_imgs/react.svg";
+import node from "../../public/tech_imgs/nodejs.svg";
+
+changeLanguage("en");
 ---
 
 <BaseLayout sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
-    <div class="text-xl py-1">Hey 👋</div>
+    <div class="text-xl py-1">{t("index.greetings")}</div>
     <div class="text-5xl font-bold">{t("index.title")}</div>
     <div class="text-3xl py-3 font-bold">Software Engineer</div>
     <div class="py-2">
       <text class="text-lg">
-        This is <b>Astrofy</b> a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS.
-        Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed. I hope you find
-        it useful!
+        <Trans i18nKey="index.description">
+          I'm a software engineer committed to constant learning and improvement. My focus spans both backend and frontend development. 
+          In the backend, I leverage technologies like Java and Python to build robust systems. On the frontend, 
+          I immerse myself in designing appealing interfaces using modern technologies such as React
+          <br>
+          This digital space reflects my passion for software engineering and my constant desire for growth. Through my projects, 
+          you can explore my problem-solving approach and dedication to creating effective technological solutions.
+          <br>
+          <b>If you have questions, proposals, or just want to connect, I'm here. Thank you for visiting my portfolio!</b>
+        </Trans>
       </text>
       <br>
-      <Trans i18nKey="superCoolKey">
-        An <a style="color: skyblue;" href="https://astro.build" title="Astro website">astro</a> integration of
-        <a style="color: green;" href="https://www.i18next.com/" title="i18next website">i18next</a> and utility
-        components to help you translate your astro websites!
-      </Trans>
+     
     </div>
-    <div class="mt-8">
+    <!-- <div class="mt-8">
       <a class="btn" href="https://twitter.com/manuelernestog" target="_blank"> Let's connect!</a>
       <a href="https://github.com/manuelernestog/astrofy" target="_blank" class="btn btn-outline ml-5">
         Get This template
       </a>
+    </div> -->
+  </div>
+  <div class="grid grid-cols-4 gap-4">
+    <div class="flex justify-center content-center">   
+      <Image
+        src= {java}
+        width={150}
+        format="svg"
+        alt="java"
+      />
     </div>
-  </div>
-
+    <div class="flex justify-center content-center">  
+      <Image
+        src= {python}
+        width={250}
+        format="svg"
+        alt="python"
+      />
+    </div>
+    <div class="flex justify-center content-center">  
+      <Image
+        src= {node}
+        width={150}
+        format="svg"
+        alt="node"
+      />
+    </div>
+    <div class="flex justify-center content-center">  
+      <Image
+        src= {react}
+        width={175}
+        format="svg"
+        alt="react"
+      />
+    </div>
+    <div class="flex justify-center content-center">  
+      <Image
+        src= {springboot}
+        width={150}
+        format="svg"
+        alt="springboot"
+      />
+    </div>
+    <div class="flex justify-center content-center">  
+      <Image
+        src= {odoo}
+        width={250}
+        format="png"
+        alt="odoo"
+      />
+    </div>
+    <div class="flex justify-center content-center">  
+      <Image
+        src= {astro}
+        width={150}
+        format="svg"
+        alt="astro"
+      />
+    </div>
+    <div class="flex justify-center content-center">  
+      <Image
+        src= {aws}
+        format="svg"
+        alt="aws"
+      />
+    </div>
+    
+ </div>
+<br>
   <div>
-    <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
+    <div class="text-3xl w-full font-bold mb-2">{t("sidebar.last_projects.title")}</div>
   </div>
-
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title={t("sidebar.last_projects.items.one.title")}
+    img="/tech_imgs/astro.webp"
+    desc={t("sidebar.last_projects.items.one.desc")}
+    url="https://github.com/DavidCondeCubas/portfolio-webpage"
     badge="NEW"
   />
-  <div class="divider my-0"></div>
+  <!-- <div class="divider my-0"></div>
   <HorizontalCard
     title="Demo Project 2"
     img="/post_img.webp"
     desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     url="#"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
-  />
- <!-- 
-    <div>
-      <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
-    </div>
-  </html>
- {
-    last_posts.map((post) => (
-      <>
-        <HorizontalCard
-          title={post.data.title}
-          img={post.data.heroImage}
-          desc={post.data.description}
-          url={"/project/" + post.slug}
-          target="_self"
-          badge={post.data.badge}
-        />
-        <div class="divider my-0" />
-      </>
-    ))
-  } -->
+  />  -->
 </BaseLayout>
