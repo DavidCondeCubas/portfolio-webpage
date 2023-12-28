@@ -21,13 +21,13 @@ interface Props {
 const { entry } = Astro.props;
 const post: BlogSchema = entry.data;
 const { Content } = await entry.render();
-const currentLanguage = i18next.language;
-const { pathname } = Astro.url;
-const slugLanguage = pathname.split("_").slice(-1)[0].substring(0, 2);
-;
-if (currentLanguage != slugLanguage) {
-    return Astro.redirect(currentLanguage != configAstro.defaultLocale ? `/${currentLanguage}/blog` : "/blog");
-}
+// const currentLanguage = i18next.language;
+// const { pathname } = Astro.url;
+// const slugLanguage = pathname.split("_").slice(-1)[0].substring(0, 2);
+// ;
+// if (currentLanguage != slugLanguage) {
+//     return Astro.redirect(currentLanguage != configAstro.defaultLocale ? `/${currentLanguage}/blog` : "/blog");
+// }
 ---
 
 <PostLayout
