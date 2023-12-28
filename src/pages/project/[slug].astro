@@ -23,12 +23,11 @@ const item: ProjectSchema = entry.data;
 const { Content } = await entry.render();
 const currentLanguage = i18next.language;
 const { pathname } = Astro.url;
-const slugLanguage = pathname.split("_").slice(-1)[0];
+const slugLanguage = pathname.split("_").slice(-1)[0].substring(0, 2);
 if (currentLanguage != slugLanguage) {
-    //return Astro.redirect(currentLanguage != configAstro.defaultLocale ? `/${currentLanguage}/project` : "/project");
+    return Astro.redirect(currentLanguage != configAstro.defaultLocale ? `/${currentLanguage}/project` : "/project");
 }
 ---
-{`currentLanguage: ${currentLanguage} ||||| `}{`slugLanguage: ${slugLanguage}`}
 <ProjectItemLayout
   title={item.title}
   description={item.description}
