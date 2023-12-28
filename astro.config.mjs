@@ -6,6 +6,6 @@ import astroI18next from "astro-i18next";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://astrofy-template.netlify.app',
+  site: 'https://davidcondecubas.es',
   integrations: [mdx(), sitemap(), tailwind(), astroI18next()]
 });
