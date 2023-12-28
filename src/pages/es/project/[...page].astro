@@ -27,8 +27,6 @@ const otherLanguages = configAstro.locales.filter(function (l) { return l !== co
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Projects  </div>
   </div>
-   list: {otherLanguages}
-  path lang: {lang}
   <ul>
     {
       page.data
@@ -38,7 +36,6 @@ const otherLanguages = configAstro.locales.filter(function (l) { return l !== co
                         )
       ).map((item) => (
         <>
-          item lang: {item.data.language}
           <HorizontalShopItem
             title={item.data.title}
             img={item.data.heroImage}
