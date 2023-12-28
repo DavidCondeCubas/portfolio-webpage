@@ -3,11 +3,13 @@ import { changeLanguage } from "i18next";
 import { CollectionEntry, getCollection } from "astro:content";
 import { ProjectSchema } from "../../../config";
 import ProjectItemLayout from "../../../layouts/ProjectItemLayout.astro";
+import i18next, { changeLanguage } from "i18next";
+import configAstro from "astro-i18next.config.mjs";
 
 changeLanguage("es");
 
 export async function getStaticPaths() {
-    const itemEntries = await getCollection("project_es");
+    const itemEntries = await getCollection("project");
     return itemEntries.map((entry) => ({
         params: { slug: entry.slug },
         props: { entry },
@@ -19,8 +21,13 @@ interface Props {
 const { entry } = Astro.props;
 const item: ProjectSchema = entry.data;
 const { Content } = await entry.render();
+const currentLanguage = i18next.language;
+const { pathname } = Astro.url;
+const slugLanguage = pathname.split("_").slice(-1)[0];
+if (currentLanguage != slugLanguage) {
+    return Astro.redirect(currentLanguage != configAstro.defaultLocale ? `/${currentLanguage}/project` : "/project");
+}
 ---
-
 <ProjectItemLayout
   title={item.title}
   description={item.description}

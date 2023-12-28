@@ -6,6 +6,7 @@ const blogSchema = z.object({
     updatedDate: z.string().optional(),
     heroImage: z.string().optional(),
     badge: z.string().optional(),
+    language:  z.string(),
     tags: z.array(z.string()).refine(items => new Set(items).size === items.length, {
         message: 'tags must be unique',
     }).optional(),
@@ -22,6 +23,7 @@ const projectSchema = z.object({
     badge: z.string().optional(),
     checkoutUrl: z.string().optional(),
     heroImage: z.string().optional(),
+    language:  z.string(),
 });
 
 export type BlogSchema = z.infer<typeof blogSchema>;

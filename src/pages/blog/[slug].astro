@@ -3,6 +3,8 @@ import { changeLanguage } from "i18next";
 import { CollectionEntry, getCollection } from "astro:content";
 import { BlogSchema } from "../../content/config";
 import PostLayout from "../../layouts/PostLayout.astro";
+import i18next, { changeLanguage } from "i18next";
+import configAstro from "astro-i18next.config.mjs";
 
 changeLanguage("en");
 
@@ -19,6 +21,12 @@ interface Props {
 const { entry } = Astro.props;
 const post: BlogSchema = entry.data;
 const { Content } = await entry.render();
+const currentLanguage = i18next.language;
+const { pathname } = Astro.url;
+const slugLanguage = pathname.split("_").slice(-1)[0];
+if (currentLanguage != slugLanguage) {
+    return Astro.redirect(currentLanguage != configAstro.defaultLocale ? `/${currentLanguage}/blog` : "/blog");
+}
 ---
 
 <PostLayout

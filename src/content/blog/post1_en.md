@@ -5,6 +5,7 @@ pubDate: "November 15, 2023"
 heroImage: "/tech_imgs/react.svg"
 badge: "React"
 tags: ["react", "fronted", "typescript"]
+language: "en"
 ---
 Using React with TypeScript is a powerful combination that provides significant advantages in modern web application development. Here are some key reasons why this combination is a solid choice:
 <br>
@@ -21,6 +22,10 @@ Using React with TypeScript is a powerful combination that provides significant 
 6. Compatibility with the Latest ECMAScript Features: TypeScript stays up-to-date with the latest ECMAScript specifications. This means you can take advantage of the newest JavaScript features in your React code without waiting for all browsers to natively support them.
 <br>
 In summary, using React with TypeScript offers significant benefits in terms of security, productivity, maintainability, and scalability. This combination is particularly valuable for large and complex projects, where code clarity and error prevention are crucial for successful development.
+<br>
+<div class="flex justify-center">
+    <i style="text-align: center">Created by ChatGPT</i>
+</div>
 <br>
 <br>
 For more details, refer to https://www.freecodecamp.org/news/use-typescript-with-react/

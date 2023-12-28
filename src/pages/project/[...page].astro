@@ -3,6 +3,8 @@ import { changeLanguage } from "i18next";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import HorizontalShopItem from "../../components/HorizontalShopItem.astro";
 import { getCollection } from "astro:content";
+import { localizePath } from "astro-i18next";
+import configAstro from "astro-i18next.config.mjs";
 
 changeLanguage("en");
 
@@ -12,16 +14,31 @@ export async function getStaticPaths({ paginate }) {
     return paginate(items, { pageSize: 10 });
 }
 const { page } = Astro.props;
+// The pathname of the current page, e.g. '/fr/'.
+const { pathname } = Astro.url;
+// The language (parent folder name) will be the second
+// item if we split the path at every forward slash.
+const lang = pathname.split("/")[1];
+const nameClass = "project";
+const otherLanguages = configAstro.locales.filter(function (l) { return l !== configAstro.defaultLocale; });
 ---
 
-<BaseLayout title="Project" sideBarActiveItemID="project">
+<BaseLayout title="Project" sideBarActiveItemID={nameClass}>
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Projects</div>
+    <div class="text-3xl w-full font-bold">Projects  </div>
   </div>
+   list: {otherLanguages}
+  path lang: {lang}
   <ul>
     {
-      page.data.map((item) => (
+      page.data
+      .filter((item) => (
+                          (item.data.language == lang) || 
+                          (!(otherLanguages.includes(item.data.language)) && lang == nameClass)
+                        )
+      ).map((item) => (
         <>
+          item lang: {item.data.language}
           <HorizontalShopItem
             title={item.data.title}
             img={item.data.heroImage}
@@ -32,7 +49,7 @@ const { page } = Astro.props;
             badge={item.data.badge}
             details={item.data.details}
             tags={item.data.tags}
-            url={"/project/" + item.slug}
+            url={localizePath(`/project/${item.slug}`)}
             custom_link={item.data.custom_link}
             custom_link_label={item.data.custom_link_label}
           />
