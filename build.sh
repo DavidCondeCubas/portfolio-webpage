@@ -7,4 +7,4 @@ sed -i '' 's/getCollection("blog")/getCollection("blog.es")/g' './src/pages/es/b
 
 # Project(es)
 sed -i '' 's/getCollection("project")/getCollection("project.es")/g' './src/pages/es/project/[...page].astro'
-sed -i '' 's/getCollection("project")/getCollection("project.es")/g' './src/pages/es/project/[slug].astro'git 
+sed -i '' 's/getCollection("project")/getCollection("project.es")/g' './src/pages/es/project/[slug].astro' 
