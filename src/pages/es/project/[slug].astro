@@ -9,7 +9,7 @@ import configAstro from "astro-i18next.config.mjs";
 changeLanguage("es");
 
 export async function getStaticPaths() {
-    const itemEntries = await getCollection("project");
+    const itemEntries = await getCollection("project.es");
     return itemEntries.map((entry) => ({
         params: { slug: entry.slug },
         props: { entry },

@@ -3,13 +3,16 @@ import { changeLanguage } from "i18next";
 import { CollectionEntry, getCollection } from "astro:content";
 import { BlogSchema } from "../../content/config";
 import PostLayout from "../../layouts/PostLayout.astro";
-import i18next, { changeLanguage } from "i18next";
 import configAstro from "astro-i18next.config.mjs";
 
 changeLanguage("en");
 
 export async function getStaticPaths() {
     const postEntries = await getCollection("blog");
+    // var postEntries = await getCollection("blog");
+    // postEntries = postEntries.filter((item) => {
+    //     return item.data.language == "en";
+    // });
     return postEntries.map((entry) => ({
         params: { slug: entry.slug },
         props: { entry },

@@ -1,26 +1,27 @@
 ---
-import { changeLanguage } from "i18next";
+import { t, changeLanguage } from "i18next";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import HorizontalCard from "../../../components/HorizontalCard.astro";
-import { getCollection } from "astro:content";
+import { getCollection, getEntries } from "astro:content";
 import { localizePath } from "astro-i18next";
 import configAstro from "astro-i18next.config.mjs";
+import { type BlogSchema } from "../../../content/config";
 
 changeLanguage("es");
 
 export async function getStaticPaths({ paginate }) {
-    const posts = await getCollection("blog");
+    //var posts = await Astro.glob<BlogSchema>("../../content/en/blog/*.md");
+    const posts = await getCollection("blog.es");
+    // var posts = await getCollection("blog.es");
+    // posts = posts.filter((item) => {
+    //     return item.data.language == "en";
+    // });
+    //var posts2 = posts.map((item) => (item.compiledContent()));
     posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
     return paginate(posts, { pageSize: 10 });
 }
 const { page } = Astro.props;
-// The pathname of the current page, e.g. '/fr/'.
-const { pathname } = Astro.url;
-// The language (parent folder name) will be the second
-// item if we split the path at every forward slash.
-const lang = pathname.split("/")[1];
 const nameClass = "blog";
-const otherLanguages = configAstro.locales.filter(function (l) { return l !== configAstro.defaultLocale; });
 ---
 
 <BaseLayout title="Blog" sideBarActiveItemID={nameClass}>
@@ -36,13 +37,7 @@ const otherLanguages = configAstro.locales.filter(function (l) { return l !== co
       </div>
     ) : (
       <ul>
-        {page.data
-          .filter((post) => (
-                              (post.data.language == lang) || 
-                              (!(otherLanguages.includes(post.data.language)) && lang == nameClass)
-                            )
-                 )
-          .map((post) => (
+        {page.data.map((post) => (
           <>
             <HorizontalCard
               title={post.data.title}
