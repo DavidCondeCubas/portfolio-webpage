@@ -36,4 +36,4 @@ En resumen, la combinación de la arquitectura hexagonal, DDD y Spring Boot pued
 </div>
 <br>
 <br>
-Para mas detalles, dirigirse a https://www.baeldung.com/hexagonal-architecture-ddd-spring
+Para mas detalles, dirigirse a <a href="https://www.baeldung.com/hexagonal-architecture-ddd-spring">https://www.baeldung.com/hexagonal-architecture-ddd-spring</a>

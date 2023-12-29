@@ -28,4 +28,4 @@ In summary, using React with TypeScript offers significant benefits in terms of 
 </div>
 <br>
 <br>
-For more details, refer to https://www.freecodecamp.org/news/use-typescript-with-react/
+For more details, refer to <a href="https://www.freecodecamp.org/news/use-typescript-with-react/">https://www.freecodecamp.org/news/use-typescript-with-react/</a>
