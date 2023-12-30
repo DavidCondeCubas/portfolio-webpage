@@ -5,7 +5,6 @@ pubDate: "October 27, 2023"
 heroImage: "/tech_imgs/spring-boot.svg"
 badge: "Java"
 tags: ["springboot", "java", "hexagonal", "solid"]
-language: "en"
 ---
 The hexagonal architecture, also known as "Ports and Adapters," and Domain-Driven Design (DDD) are architectural approaches that aim to improve the modularity, flexibility, and maintainability of software. When combined with Spring Boot, a framework for building Java applications based on Spring, they can offer several benefits. Here are some reasons why you might consider using hexagonal architecture, DDD, and Spring Boot together:
 <br>

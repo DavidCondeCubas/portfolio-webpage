@@ -5,7 +5,6 @@ pubDate: "November 15, 2023"
 heroImage: "/tech_imgs/react.svg"
 badge: "React"
 tags: ["react", "fronted", "typescript"]
-language: "en"
 ---
 Using React with TypeScript is a powerful combination that provides significant advantages in modern web application development. Here are some key reasons why this combination is a solid choice:
 <br>
