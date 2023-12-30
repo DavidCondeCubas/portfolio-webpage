@@ -5,7 +5,12 @@
     "services": "Services",
     "blog": "Blog",
     "cv": "CV",
-    "contact": "Contact",
+    "contact": "Contact"
+  },
+  "index": {
+    "greetings": "Welcome to my development space! 🚀",
+    "title": "I'm David Conde",
+    "description": "I'm a software engineer committed to constant learning and improvement. My focus spans both backend and frontend development. In the backend, I leverage technologies like Java and Python to build robust systems. On the frontend, I immerse myself in designing appealing interfaces using modern technologies such as React<0>This digital space reflects my passion for software engineering and my constant desire for growth. Through my projects, you can explore my problem-solving approach and dedication to creating effective technological solutions.<1><2>If you have questions, proposals, or just want to connect, I'm here. Thank you for visiting my portfolio!</2>",
     "last_projects": {
       "title": "My last projects",
       "items": {
@@ -17,11 +22,27 @@
         "three":{}
       }
     }
+  }, 
+  "project": {
+    "title": "Projects"
   },
-  "index": {
-    "greetings": "Welcome to my development space! 🚀",
-    "title": "I'm David Conde",
-    "description": "I'm a software engineer committed to constant learning and improvement. My focus spans both backend and frontend development. In the backend, I leverage technologies like Java and Python to build robust systems. On the frontend, I immerse myself in designing appealing interfaces using modern technologies such as React<0>This digital space reflects my passion for software engineering and my constant desire for growth. Through my projects, you can explore my problem-solving approach and dedication to creating effective technological solutions.<1><2>If you have questions, proposals, or just want to connect, I'm here. Thank you for visiting my portfolio!</2>"
+  "service": {
+      "title": "Services",
+      "one": {
+        "title": "Process Automation",
+        "desc": "Development of scripts and tools to automate recurring tasks, enhancing efficiency in the phases of software development and deployment. This not only reduces potential human errors but also speeds up the development cycle, from coding to deployment, optimizing resources and enabling a more agile and effective approach in software engineering.",
+        "img": "/tech_imgs/automatic-process.svg"
+      },
+      "two": {
+        "title": "Web Development",
+        "desc": "In considering client needs, the selection of the appropriate technology is paramount. For comprehensive business integration and holistic web development, Odoo emerges as an ideal choice, particularly suitable for companies seeking complete solutions. In the case of web projects prioritizing interactive and dynamic user interfaces, React stands out as a prominent choice, appealing to those in search of modernity and interactivity. Meanwhile, for websites with a primary focus on loading efficiency and performance, Astro positions itself as the preferred option, especially for clients who value speed and optimization in their online platforms.",
+        "img": "/tech_imgs/web-page.svg"
+      },
+      "three": {
+        "title": "",
+        "desc": "",
+        "img": "/tech_imgs/programmer.svg"
+      }
   },
   "cv": {
     "profile": {

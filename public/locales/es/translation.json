@@ -5,7 +5,12 @@
     "services": "Servicios",
     "blog": "Blog",
     "cv": "CV",
-    "contact": "Contacto",
+    "contact": "Contacto"
+  },
+  "index": {
+    "greetings": "Bienvenido a mi espacio de desarrollo! 🚀",
+    "title": "Yo soy David Conde Cubas",
+    "description": "Soy un ingeniero de software con un compromiso constante de aprender y mejorar. Mi enfoque abarca tanto el desarrollo backend como el frontend. En el backend, utilizo tecnologías como Java y Python para construir sistemas robustos. En el frontend, me sumerjo en el diseño de interfaces atractivas utilizando tecnologías modernas como React.<0>Este espacio digital es un reflejo de mi pasión por la ingeniería de software y mi deseo constante de crecimiento. A través de mis proyectos, podrás explorar mi enfoque en la resolución de problemas y mi dedicación a crear soluciones tecnológicas efectivas.<1><2>Si tienes preguntas, propuestas o simplemente deseas conectarte, estoy aquí. ¡Gracias por visitar mi portafolio!</2>",
     "last_projects": {
       "title": "Mis últimos proyectos",
       "items": {
@@ -18,10 +23,26 @@
       }
     }
   },
-  "index": {
-    "greetings": "Bienvenido a mi espacio de desarrollo! 🚀",
-    "title": "Yo soy David Conde Cubas",
-    "description": "Soy un ingeniero de software con un compromiso constante de aprender y mejorar. Mi enfoque abarca tanto el desarrollo backend como el frontend. En el backend, utilizo tecnologías como Java y Python para construir sistemas robustos. En el frontend, me sumerjo en el diseño de interfaces atractivas utilizando tecnologías modernas como React.<0>Este espacio digital es un reflejo de mi pasión por la ingeniería de software y mi deseo constante de crecimiento. A través de mis proyectos, podrás explorar mi enfoque en la resolución de problemas y mi dedicación a crear soluciones tecnológicas efectivas.<1><2>Si tienes preguntas, propuestas o simplemente deseas conectarte, estoy aquí. ¡Gracias por visitar mi portafolio!</2>"
+  "project": {
+    "title": "Proyectos"
+  },
+  "service": {
+      "title": "Servicios",
+      "one": {
+        "title": "Automatización de Procesos",
+        "desc": "Desarrollo de scripts y herramientas para automatizar tareas recurrentes, mejorando la eficiencia en las fases de desarrollo y despliegue de software. Esto no solo reduce posibles errores humanos, sino que también acelera el ciclo de desarrollo, desde la codificación hasta el despliegue, optimizando recursos y permitiendo un enfoque más ágil y eficaz en la ingeniería de software.",
+        "img": "/tech_imgs/automatic-process.svg"
+      },
+      "two": {
+        "title": "Desarrollo de paginas web",
+        "desc": "Al considerar las necesidades del cliente, la elección de la tecnología adecuada es fundamental. Para integración empresarial y desarrollo web integral, Odoo se presenta como una opción idónea, siendo especialmente adecuado para empresas que buscan soluciones completas. En el caso de proyectos web que priorizan interfaces de usuario interactivas y dinámicas, React emerge como una elección destacada, atrayendo a aquellos que buscan modernidad e interactividad. Mientras tanto, para sitios web con un enfoque primordial en la eficiencia de carga y rendimiento, Astro se presenta como la opción preferida, especialmente para aquellos clientes que valoran la velocidad y la optimización en sus plataformas en línea.",
+        "img": "/tech_imgs/web-page.svg"
+      },
+      "three": {
+        "title": "",
+        "desc": "",
+        "img": "/tech_imgs/programmer.svg"
+      }
   },
   "cv": {
     "profile": {
