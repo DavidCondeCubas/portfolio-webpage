@@ -1,16 +1,35 @@
 ---
-title: "Proyecto en español 1"
-description: "Proyecto en esp ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-custom_link_label: "Live Preview"
-custom_link: "https://demourl.com/"
-updatedDate: "Sep 15 2022"
-pricing: "$15"
-badge: "Featured"
-checkoutUrl: "https://checkouturl.com/"
-heroImage: "/itemPreview.png"
-language:  "es"
+title: "Página Web de Portfolio"
+description: "Este repositorio alberga mi portafolio web, construido con Astro. Este proyecto es el escaparate digital de mi experiencia y habilidades en el mundo del desarrollo de software."
+updatedDate: "Dec 29 2023"
+badge: "Nuevo"
+custom_link: "https://github.com/DavidCondeCubas/portfolio-webpage"
+custom_link_label: "Ir"
+heroImage: "/tech_imgs/astro.svg"
 ---
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
-
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+Este repositorio alberga el código fuente de mi página web personal que sirve como vitrina para mis proyectos destacados. Desarrollada utilizando el marco moderno Astro, la plataforma garantiza una experiencia de usuario rápida y eficiente, combinando la velocidad de las páginas estáticas con la flexibilidad de las aplicaciones de una sola página (SPA).
+<br><br>
+<b>Características Principales:</b>
+<br>
+1- Eficiencia y Velocidad: La página se beneficia de la generación de páginas estáticas para lograr tiempos de carga rápidos, asegurando que los visitantes accedan a la información de mis proyectos de manera instantánea.
+<br>
+2- Diseño Intuitivo: La interfaz de usuario se ha diseñado de manera intuitiva para permitir a los visitantes navegar fácilmente a través de mis proyectos. La disposición limpia y atractiva resalta visualmente cada proyecto.
+<br>
+3- Detalles Extenso: Cada proyecto cuenta con descripciones detalladas, imágenes y enlaces pertinentes a los repositorios en GitHub. Esta información ofrece una visión completa de la naturaleza, tecnologías utilizadas y los logros alcanzados en cada proyecto.
+Responsive y Adaptable: La página se adapta a diferentes dispositivos y tamaños de pantalla, asegurando una experiencia consistente y atractiva, ya sea en computadoras de escritorio, tabletas o dispositivos móviles.
+<br><br>
+<b>Implementación:</b>
+<br>
+1- Requisitos Previos: Asegúrate de tener Node.js instalado y las dependencias necesarias mediante el archivo package.json.
+<br>
+2- Configuración Personalizada: Personaliza la información de la página según tus preferencias en el archivo de configuración. Incluye tu biografía, enlaces a perfiles de redes sociales y cualquier otro detalle relevante.
+<br>
+3- Despliegue Sencillo: Utiliza servicios de alojamiento como Vercel, Netlify u otros compatibles con Astro para implementar tu página web y hacerla accesible para el público.
+<br><br>
+<b>Contribuciones y Feedback:</b>
+<br>
+¡Se anima a las contribuciones y sugerencias! Si encuentras errores, tienes ideas para mejoras o deseas colaborar, no dudes en abrir problemas o enviar solicitudes de extracción. La participación de la comunidad es crucial para el desarrollo continuo y la mejora de esta plataforma.
+<br>
+<div class="flex justify-center">
+    <i style="text-align: center">Generado por ChatGPT</i>
+</div>

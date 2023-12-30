@@ -1,16 +1,36 @@
 ---
-title: "Demo Item 1"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-custom_link_label: "Live Preview"
-custom_link: "https://demourl.com/"
-updatedDate: "Sep 15 2022"
-pricing: "$15"
-badge: "Featured"
-checkoutUrl: "https://checkouturl.com/"
-heroImage: "/itemPreview.png"
-language:  "en"
+title: "Portfolio Webpage"
+description: "This repository houses my web portfolio, built with Astro. This project serves as the digital showcase of my experience and skills in the field of software development."
+updatedDate: "Dec 29 2023"
+badge: "New"
+custom_link: "https://github.com/DavidCondeCubas/portfolio-webpage"
+custom_link_label: "Go"
+heroImage: "/tech_imgs/astro.svg"
 ---
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
-
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+This repository hosts the source code of my personal website, serving as a showcase for my highlighted projects. Developed using the modern Astro framework, the platform ensures a fast and efficient user experience by combining the speed of static pages with the flexibility of single-page applications (SPAs).
+<br><br>
+<b>Key Features:</b>
+<br>
+1- Efficiency and Speed: The page benefits from static page generation to achieve fast loading times, ensuring that visitors can access information about my projects instantly.
+<br>
+2- Intuitive Design: The user interface is intuitively designed to allow visitors to navigate easily through my projects. The clean and attractive layout visually highlights each project.
+<br>
+3- Comprehensive Details: Each project includes detailed descriptions, images, and relevant links to GitHub repositories. This information provides a complete overview of the nature, technologies used, and achievements in each project.
+<br>
+4- Responsive and Adaptable: The page adapts to different devices and screen sizes, ensuring a consistent and attractive experience, whether on desktop computers, tablets, or mobile devices.
+<br><br>
+<b>Implementation:</b>
+<br>
+1- Prerequisites: Make sure to have Node.js installed and the necessary dependencies specified in the package.json file.
+<br>
+2- Custom Configuration: Customize the page information according to your preferences in the configuration file. Include your biography, links to social media profiles, and any other relevant details.
+<br>
+3- Simple Deployment: Use hosting services such as Vercel, Netlify, or others compatible with Astro to deploy your website and make it accessible to the public.
+<br><br>
+<b>Contributions and Feedback:</b>
+<br>
+Contributions and suggestions are encouraged! If you find errors, have ideas for improvements, or wish to collaborate, feel free to open issues or send pull requests. Community participation is crucial for the continuous development and improvement of this platform.
+<br>
+<div class="flex justify-center">
+    <i style="text-align: center">Created by ChatGPT</i>
+</div>
