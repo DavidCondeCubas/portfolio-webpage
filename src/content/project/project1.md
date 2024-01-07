@@ -2,7 +2,7 @@
 title: "Portfolio Webpage"
 description: "This repository houses my web portfolio, built with Astro. This project serves as the digital showcase of my experience and skills in the field of software development."
 updatedDate: "Dec 29 2023"
-badge: "New"
+badge: ""
 custom_link: "https://github.com/DavidCondeCubas/portfolio-webpage"
 custom_link_label: "Go"
 heroImage: "/tech_imgs/astro.svg"
