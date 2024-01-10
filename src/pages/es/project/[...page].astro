@@ -5,12 +5,13 @@ import HorizontalShopItem from "../../../components/HorizontalShopItem.astro";
 import { getCollection } from "astro:content";
 import { localizePath } from "astro-i18next";
 import configAstro from "astro-i18next.config.mjs";
+import dayjs from "dayjs";
 
 changeLanguage("es");
 
 export async function getStaticPaths({ paginate }) {
     const items = await getCollection("project.es");
-    items.sort((a, b) => b.data.updatedDate.valueOf() - a.data.updatedDate.valueOf());
+    items.sort((a, b) => dayjs(b.data.updatedDate).valueOf() - dayjs(a.data.updatedDate).valueOf());
     return paginate(items, { pageSize: 10 });
 }
 const { page } = Astro.props;

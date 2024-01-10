@@ -1,5 +1,4 @@
 ---
-import { changeLanguage } from "i18next";
 import { CollectionEntry, getCollection } from "astro:content";
 import { ProjectSchema } from "../../../config";
 import ProjectItemLayout from "../../../layouts/ProjectItemLayout.astro";
@@ -28,9 +27,6 @@ const { Content } = await entry.render();
   heroImage={item.heroImage}
   updatedDate={item.updatedDate}
   heroImage={item.heroImage}
-  pricing={item.pricing}
-  oldPricing={item.oldPricing}
-  checkoutUrl={item.checkoutUrl}
   badge={item.badge}
   custom_link={item.custom_link}
   custom_link_label={item.custom_link_label}

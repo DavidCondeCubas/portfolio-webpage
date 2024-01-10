@@ -6,6 +6,7 @@ import { getCollection, getEntries } from "astro:content";
 import { localizePath } from "astro-i18next";
 import configAstro from "astro-i18next.config.mjs";
 import { type BlogSchema } from "../../content/config";
+import dayjs from "dayjs";
 
 changeLanguage("en");
 
@@ -17,7 +18,7 @@ export async function getStaticPaths({ paginate }) {
     //     return item.data.language == "en";
     // });
     //var posts2 = posts.map((item) => (item.compiledContent()));
-    posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+    posts.sort((a, b) => dayjs(b.data.pubDate).valueOf() - dayjs(a.data.pubDate).valueOf());
     return paginate(posts, { pageSize: 10 });
 }
 const { page } = Astro.props;
